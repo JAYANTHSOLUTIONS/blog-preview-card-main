@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+   @font-face {
+  font-family: 'FigtreeI';
+  src: url('assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  background-color:  hsl(47, 88%, 63%);
+}
+.container{
+ 
+display: flex;
+justify-content: center;
+align-items: center;
+border:0.5px solid black;
+min-height: 800px;
+}
+
+.card{
+  font-family:'FigtreeI';
+  border-width: 1px 8px 8px 1px;
+  border-color: black;
+  border-style: solid;
+  width:400px;
+  height:500px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: hsl(0, 0%, 100%);
+  font-size: 16px;
+}
+
+
+.btn{
+  border-radius: 5px;
+  height:20px;
+  width:60px;
+  background-color:  hsl(47, 88%, 63%);
+  color: black;
+  padding: 4px 15px;
+}
+
+
+
+h3{
+
+  font-family: "(https://fonts.google.com/specimen/Figtree)",'FigtreeI';
+  font-size: 1.5 em;
+  font-weight: 800;
+}
+.para{
+  color:  hsl(0, 0%, 42%);
+}
+
+.name{
+  display: flex;
+  
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: 800;
+
+}
+
+
+.illus{
+  border: 0.5px solid black;
+  border-radius: 20px;
+  height: 200px;
+  background-image: url('assets/images/illustration-article.svg');
+  margin-bottom: 20px;
+
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+
+    <div class="card">
+
+      <div class="illus">
+
+      </div>
+      
+      <p class="btn"><b>Learning</b></p>
+
+
+      <p>Published 21 Dec 2023</p>
+
+      <h3>HTML & CSS foundations</h3>
+
+      <p class="para">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+      <div class="name">
+        <img class="logo" alt="circle" src="assets/images/image-avatar.webp" width="30px" height="30px">
+        <p> <b>Greg Hooper</b></p>
+      </div>
+      
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Jayanth R</a>.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
